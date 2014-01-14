@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<link type="text/css" rel="stylesheet" href="themes/bluesky/skin.css" />
+</h:head>
+<h:body>
+	<h:form>
+	<h:panelGrid columns="2" cellpadding="10"> 
+		<p:pieChart id="chart1997200" value="#{sentimentBean.chart1997200}"
+			legendPosition="e" title="Sentiment Analysis of Amazon Reviews 1997-2000"
+			style="width:350px;height:250px" showDataLabels="true"/>
+		<p:pieChart id="chart20012004" value="#{sentimentBean.chart20012004}"
+			legendPosition="e" title="Sentiment Analysis of Amazon Reviews 2001-2004"
+			style="width:350px;height:250px" showDataLabels="true"/>
+		<p:pieChart id="chart20052008" value="#{sentimentBean.chart20052008}"
+			legendPosition="e" title="Sentiment Analysis of Amazon Reviews 2005-2008"
+			style="width:350px;height:250px" showDataLabels="true"/>
+		<p:pieChart id="chart20092012" value="#{sentimentBean.chart20092012}"
+			legendPosition="e" title="Sentiment Analysis of Amazon Reviews 2009-2012"
+			style="width:350px;height:250px" showDataLabels="true"/>
+		</h:panelGrid>	
+	</h:form>
+</h:body>
+</html>
